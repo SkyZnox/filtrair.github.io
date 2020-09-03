@@ -1,0 +1,106 @@
+/*Reset CSS*/
+
+html{
+    background-color: #2F4F4F;
+        background-image:url(http://getwallpapers.com/wallpaper/full/9/1/1/1153104-vertical-2550-x-1440-wallpaper-2560x1440.jpg);
+    /*https://c.wallhere.com/photos/b9/ae/deer_animals_night_river_Moon_landscape-1213112.jpg!d*/
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: #2F4F4F;
+}
+a
+{
+color: white;
+text-decoration: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2F4F4F;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #2F4F4F;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 0px 300px;
+    color: white;
+  height: 2000px;
+    text-align: justify;
+ background-color: #696969;
+  padding: 0 20px 20px 20px;
+  border: 2px inset black;
+   
+}
+
+.conteneur img{
+    height: auto;
+    width: 50;
+    
+}
